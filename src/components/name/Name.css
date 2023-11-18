@@ -1,0 +1,61 @@
+.name {
+  justify-content: left;
+  border-radius: 30px;
+}
+
+.name h1 {
+  margin: 0% 10%;
+  padding: 5% 10%;
+  color: #111;
+  font-size: 4em;
+}
+
+.name h1 span {
+  display: table-cell;
+  margin: 20px;
+  padding: 0;
+  animation: animate 3s ease infinite;
+}
+.name .space {
+  padding: 10px;
+}
+
+.name h1 span:nth-child(1) {
+  animation-delay: 0s;
+}
+.name h1 span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.name h1 span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.name h1 span:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.name h1 span:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.name h1 span:nth-child(6) {
+  animation-delay: 1.5s;
+}
+.name h1 span:nth-child(7) {
+  animation-delay: 1.8s;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #ff9d00, 0 0 20px #ff9d00, 0 0 40px #ff9d00,
+      0 0 80px #ff9d00, 0 0 120px #ff9d00, 0 0 200px #ff9d00, 0 0 300px #ff9d00,
+      0 0 400px #ff9d00;
+  }
+
+  5%,
+  95% {
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
